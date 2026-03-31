@@ -1,0 +1,51 @@
+{
+  "name": "Habit",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "T\u00ean th\u00f3i quen"
+    },
+    "description": {
+      "type": "string",
+      "description": "M\u00f4 t\u1ea3 th\u00f3i quen"
+    },
+    "emoji": {
+      "type": "string",
+      "description": "Emoji \u0111\u1ea1i di\u1ec7n"
+    },
+    "frequency": {
+      "type": "string",
+      "enum": [
+        "daily",
+        "weekly"
+      ],
+      "default": "daily",
+      "description": "T\u1ea7n su\u1ea5t: h\u00e0ng ng\u00e0y ho\u1eb7c ch\u1ecdn ng\u00e0y trong tu\u1ea7n"
+    },
+    "days_of_week": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "C\u00e1c ng\u00e0y trong tu\u1ea7n (0=CN, 1=T2, ..., 6=T7)"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Ng\u00e0y b\u1eaft \u0111\u1ea7u"
+    },
+    "color": {
+      "type": "string",
+      "description": "M\u00e0u s\u1eafc c\u1ee7a th\u00f3i quen"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Th\u00f3i quen \u0111ang ho\u1ea1t \u0111\u1ed9ng"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

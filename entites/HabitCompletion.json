@@ -1,0 +1,19 @@
+{
+  "name": "HabitCompletion",
+  "type": "object",
+  "properties": {
+    "habit_id": {
+      "type": "string",
+      "description": "ID c\u1ee7a th\u00f3i quen"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Ng\u00e0y ho\u00e0n th\u00e0nh (YYYY-MM-DD)"
+    }
+  },
+  "required": [
+    "habit_id",
+    "date"
+  ]
+}
